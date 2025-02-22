@@ -39,7 +39,7 @@ const TopNav = () => {
           </Avatar>
         </ProfileDropdown>
       </div>
-      <div className="flex justify-start items-center gap-1">
+      <div className="justify-start items-center gap-1 hidden md:flex">
         {NAVBAR_TABS.map((item) => (
           <NavbarTab key={item.id} item={item} />
         ))}

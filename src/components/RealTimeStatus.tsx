@@ -45,7 +45,7 @@ export function RealTimeStatus() {
         </CardTitle>
       </CardHeader>
       <Separator />
-      <CardContent className="flex flex-col items-center pb-0">
+      <CardContent className="flex flex-col items-center">
         <div className="flex justify-between items-center pt-4 gap-6">
           <div>
             <div className="flex justify-center items-center gap-2">
@@ -64,14 +64,14 @@ export function RealTimeStatus() {
         </div>
         <ChartContainer
           config={chartConfig}
-          className="m-auto aspect-square w-full max-w-[250px]"
+          className="m-auto aspect-[3/2] w-full max-w-[250px]"
         >
           <RadialBarChart
             data={chartData}
             endAngle={180}
             innerRadius={80}
             outerRadius={130}
-            cy={"60%"}
+            cy={"80%"}
           >
             <ChartTooltip
               cursor={false}

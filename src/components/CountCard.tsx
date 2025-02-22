@@ -27,7 +27,7 @@ const CountCard = ({ title, tooltipText, content }: ICountCardProps) => {
         </CardTitle>
       </CardHeader>
       <Separator />
-      <CardContent className="flex justify-center items-center pb-0 h-full">
+      <CardContent className="flex justify-center items-center py-1 h-full">
         <h1 className="text-2xl font-bold">{content}</h1>
       </CardContent>
     </Card>
