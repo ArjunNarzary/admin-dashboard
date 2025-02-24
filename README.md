@@ -1,12 +1,12 @@
-## Admin Dashboard
+# Admin Dashboard
 
 Simple responsive dashboard design
 
-# Tech Stack
+## Tech Stack
 
 - NextJs, TypeScript, Tailwind CSS, ShadCN UI
 
-# Steps to run the project:
+## Steps to run the project:
 
 1. Copy .env.example to .env.local
 2. Fill the variable
