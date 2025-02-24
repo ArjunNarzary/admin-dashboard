@@ -139,3 +139,146 @@ export const NAVBAR_TABS = [
     selected: false,
   },
 ]
+
+export interface IEmployeeTableData {
+  id: string
+  employee: {
+    name: string
+    img?: string
+    employeeId?: string
+  }
+  attendence?: {
+    punchedIn?: string
+    punchedOut?: string
+    from?: string
+  }
+  lastLocation?: {
+    location: string
+    cretedAt?: string
+  }
+}
+
+export const EMPLOYEE_TABLE_DATA: IEmployeeTableData[] = [
+  {
+    id: "1",
+    employee: {
+      name: "Kumar Viswas",
+    },
+  },
+  {
+    id: "2",
+    employee: {
+      name: "Mayur Tyagi",
+    },
+    attendence: {
+      punchedIn: "Today at 5:14 PM",
+      from: "Unolo",
+    },
+    lastLocation: {
+      location:
+        "514 The Palm Springs Plazza, Golf Course Rd, DLF Phase 5, Sector 54, Gurugram, Haryana 122102",
+      cretedAt: "7 hours ago",
+    },
+  },
+  {
+    id: "3",
+    employee: {
+      name: "Mohan Bishnoi",
+      employeeId: "123",
+    },
+    attendence: {
+      punchedOut: "19-12-2024",
+    },
+    lastLocation: {
+      location: "Vikas Marg, South City II, Sector 49, Gurugram",
+      cretedAt: "2 months ago",
+    },
+  },
+  {
+    id: "4",
+    employee: {
+      name: "Om Bhagwan",
+    },
+    attendence: {
+      punchedIn: "Today at 4:27 PM",
+      from: "Unolo",
+    },
+    lastLocation: {
+      location:
+        "514 The Palm Springs Plazza, Golf Course Rd, DLF Phase 5, Sector 54, Gurugram, Haryana 122102",
+      cretedAt: "7 hours ago",
+    },
+  },
+  {
+    id: "5",
+    employee: {
+      name: "Kumar Viswas",
+    },
+  },
+  {
+    id: "6",
+    employee: {
+      name: "Mayur Tyagi",
+    },
+    attendence: {
+      punchedIn: "Today at 5:14 PM",
+      from: "Unolo",
+    },
+    lastLocation: {
+      location:
+        "514 The Palm Springs Plazza, Golf Course Rd, DLF Phase 5, Sector 54, Gurugram, Haryana 122102",
+      cretedAt: "7 hours ago",
+    },
+  },
+  {
+    id: "7",
+    employee: {
+      name: "Mohan Bishnoi",
+      employeeId: "123",
+    },
+    attendence: {
+      punchedOut: "19-12-2024",
+    },
+    lastLocation: {
+      location: "Vikas Marg, South City II, Sector 49, Gurugram",
+      cretedAt: "2 months ago",
+    },
+  },
+  {
+    id: "8",
+    employee: {
+      name: "Om Bhagwan",
+    },
+    attendence: {
+      punchedIn: "Today at 4:27 PM",
+      from: "Unolo",
+    },
+    lastLocation: {
+      location:
+        "514 The Palm Springs Plazza, Golf Course Rd, DLF Phase 5, Sector 54, Gurugram, Haryana 122102",
+      cretedAt: "7 hours ago",
+    },
+  },
+]
+
+export interface IOffDutyEmployeeTableData {
+  id: string
+  employee: {
+    name: string
+    img?: string
+    employeeId?: string
+  }
+  teamName: string
+  status: string
+}
+
+export const OFF_DUTY_EMPLOYEE_TABLE_DATA: IOffDutyEmployeeTableData[] = [
+  {
+    id: "1",
+    employee: {
+      name: "Rahul Singh",
+    },
+    teamName: "Deafult",
+    status: "Weekly Off",
+  },
+]

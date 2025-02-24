@@ -1,4 +1,6 @@
 import CountCard from "@/components/CountCard"
+import EmployeesTable from "@/components/EmployeesTable"
+import OffDutyEmployeeTable from "@/components/OffDutyEmployeeTable"
 import { RealTimeStatus } from "@/components/RealTimeStatus"
 import TeamwiseAttendance from "@/components/TeamwiseAttendance"
 import { Button } from "@/components/ui/button"
@@ -33,6 +35,8 @@ export default function Home() {
             </div>
           </div>
           <TeamwiseAttendance />
+          <EmployeesTable />
+          <OffDutyEmployeeTable />
         </div>
       </TooltipProvider>
     </main>

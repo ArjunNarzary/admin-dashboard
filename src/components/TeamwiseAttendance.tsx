@@ -13,13 +13,23 @@ const TeamwiseAttendance = () => {
       </CardHeader>
       <Separator />
       <CardContent className="py-4 mb-4 h-full overflow-y-auto space-y-3">
-        <CustomProgressBar title="Bond" current={2} total={5} color="violet" />
-        <CustomProgressBar title="Default" current={0} total={1} color="red" />
+        <CustomProgressBar
+          title="Bond"
+          current={2}
+          total={5}
+          classNames="bg-violet-100 [&>*]:bg-violet-500"
+        />
+        <CustomProgressBar
+          title="Default"
+          current={0}
+          total={1}
+          classNames="bg-red-100 [&>*]:bg-red-500"
+        />
         <CustomProgressBar
           title="Alpha"
           current={9}
           total={10}
-          color="orange"
+          classNames="bg-orange-100 [&>*]:bg-orange-500"
         />
       </CardContent>
     </Card>

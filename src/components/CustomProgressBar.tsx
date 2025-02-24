@@ -1,16 +1,17 @@
 import React from "react"
 import { Progress } from "./ui/progress"
+import { cn } from "@/lib/utils"
 
 const CustomProgressBar = ({
   title,
   current,
   total,
-  color,
+  classNames,
 }: {
   title: string
   current: number
   total: number
-  color: string
+  classNames?: string
 }) => {
   const progressPercentage = Math.abs((current / total) * 100)
   return (
@@ -23,7 +24,7 @@ const CustomProgressBar = ({
       </div>
       <Progress
         value={progressPercentage}
-        className={`h-3 w-full bg-${color}-100 [&>*]:bg-${color}-500`}
+        className={cn("h-3 w-full", classNames)}
       />
     </div>
   )
