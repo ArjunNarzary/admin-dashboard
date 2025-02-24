@@ -63,13 +63,13 @@ export default function TaskStatusOverview() {
       <CardContent className="flex flex-1 items-center pb-0">
         <ChartContainer
           config={chartConfig}
-          className="mx-auto aspect-[3/2] w-full max-w-[250px]"
+          className="mx-auto aspect-[3/2] w-full max-w-[300px]"
         >
           <RadialBarChart
             data={chartData}
             endAngle={180}
-            innerRadius={80}
-            outerRadius={130}
+            innerRadius={120}
+            outerRadius={200}
             cy={"80%"}
           >
             <ChartTooltip
