@@ -19,6 +19,7 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar"
 import { ISideNavItem, NAVBAR_TABS } from "@/utils/constants"
 import { cn } from "@/lib/utils"
+import { signOut } from "@/auth"
 
 const TopNav = () => {
   return (
@@ -85,7 +86,13 @@ const ProfileDropdown = ({ children }: { children: React.ReactNode }) => {
           </DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
-        <DropdownMenuItem className="text-red-700">
+        <DropdownMenuItem
+          className="text-red-700"
+          onClick={async () => {
+            "use server"
+            await signOut()
+          }}
+        >
           <LogOutIcon />
           <span>Log out</span>
         </DropdownMenuItem>
