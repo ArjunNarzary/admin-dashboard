@@ -14,6 +14,7 @@ import { DownloadIcon } from "lucide-react"
 export default function Home() {
   return (
     <main className="p-0 md:p-4">
+      {/* Top Heading and download button */}
       <div className="flex justify-between items-center">
         <h1 className="text-xl font-semibold">Realtime Dashboard</h1>
         <Button className="bg-gray-500 p-1 px-3">
@@ -21,8 +22,11 @@ export default function Home() {
           <span className="hidden md:block">Attendence Status</span>
         </Button>
       </div>
+
+      {/* Main dashboard details start here */}
       <TooltipProvider>
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2 pt-4">
+          {/* Real time status, Punched In and Staffing strength section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
             <RealTimeStatus />
             <div className="grid grid-cols-1 gap-2">

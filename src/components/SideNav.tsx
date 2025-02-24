@@ -37,7 +37,7 @@ const SideMenu = ({ item }: { item: ISideNavItem }) => {
   return (
     <div
       className={cn(
-        "flex justify-center md:justify-start items-center gap-2 p-2 rounded-md bg-gray-300 cursor-pointer hover:bg-gray-500 hover:text-white",
+        "flex justify-center md:justify-start items-center gap-2 p-2 rounded-md cursor-pointer hover:bg-gray-500 hover:text-white",
         item.selected && "bg-blue-500 text-white"
       )}
     >
