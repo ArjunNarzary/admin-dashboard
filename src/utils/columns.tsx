@@ -5,7 +5,7 @@ import { getFirstTwoChars } from "@/lib/utils"
 export const EmployeeColumn: ColumnDef<IEmployeeTableData>[] = [
   {
     accessorKey: "employee",
-    header: "Employee",
+    header: () => "Employee",
     cell: ({ row }) => {
       const employee = row.getValue(
         "employee"

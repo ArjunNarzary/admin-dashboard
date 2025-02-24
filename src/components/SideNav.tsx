@@ -6,9 +6,22 @@ import { cn } from "@/lib/utils"
 export const SideNav = () => {
   return (
     <div className="p-4">
-      <div className="flex justify-start items-start gap-2">
-        <Image width={100} height={100} src="/unolo_logo.webp" alt="unolo" />
-        <span className="font-bold text-xs">Pro</span>
+      <div className="flex justify-center md:justify-start items-start gap-2">
+        <Image
+          width={100}
+          height={100}
+          className="hidden md:block"
+          src="/unolo_logo.webp"
+          alt="unolo"
+        />
+        <Image
+          width={30}
+          height={30}
+          className="md:hidden"
+          src="/unolo_logo_single.png"
+          alt="unolo"
+        />
+        <span className="hidden md:inline font-bold text-xs">Pro</span>
       </div>
       <div className="flex flex-col gap-y-2 pt-6 text-md">
         {SIDENAV.map((item) => {

@@ -10,14 +10,14 @@ const TableHeader = ({
   title: string
 }) => {
   return (
-    <div className="flex justify-between items-center text-sm">
+    <div className="flex justify-between items-start md:items-center text-sm">
       <h1 className="font-semibold">{title}</h1>
-      <div className="flex justify-end items-center gap-2">
+      <div className="flex flex-col-reverse md:flex-row justify-end items-end md:items-center gap-2">
         {children}
         <div className="relative">
           <SearchIcon className="size-4 absolute top-[0.5rem] left-2 text-gray-600" />
           <Input
-            className="pl-7 bg-gray-50 text-xs h-8 w-[12rem]"
+            className="pl-7 bg-gray-50 text-xs h-8 w-[8rem] md:w-[12rem]"
             type="text"
             placeholder="Search Here"
           />
